@@ -1,19 +1,28 @@
 {
-  "name": "graphql-movie",
-  "version": "1.0.0",
-  "description": "Movie Movie API with GraphQL",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/thenameiswiiwin/graphql-movie.git"
-  },
-  "author": "Huy Nguyen <huyn.nguyen95@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thenameiswiiwin/graphql-movie/issues"
-  },
-  "homepage": "https://github.com/thenameiswiiwin/graphql-movie#readme"
+	"name": "graphql-movie",
+	"version": "1.0.0",
+	"description": "Movie Movie API with GraphQL",
+	"main": "index.js",
+	"scripts": {
+		"start": "babel-node src/index.js",
+		"dev": "nodemon --exec babel-node src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/thenameiswiiwin/graphql-movie.git"
+	},
+	"author": "Huy Nguyen <huyn.nguyen95@gmail.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/thenameiswiiwin/graphql-movie/issues"
+	},
+	"homepage": "https://github.com/thenameiswiiwin/graphql-movie#readme",
+	"dependencies": {
+		"axios": "^0.18.0",
+		"babel-polyfill": "^6.26.0",
+		"graphql-yoga": "^1.14.8",
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-stage-3": "^6.24.1"
+	}
 }
